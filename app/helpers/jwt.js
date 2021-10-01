@@ -10,6 +10,7 @@ function authJwt() {
       "/users/login",
       { url: /\/users/, method: ["POST"] },
       { url: /\/users\/google/, method: ["POST"] },
+      { url: /\/users\/facebook/, method: ["POST"] },
     ],
   });
 }

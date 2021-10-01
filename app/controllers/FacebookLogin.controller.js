@@ -1,9 +1,9 @@
-const bcryptjs = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const bcryptjs = require("bcryptjs");
 const User = require("../model/Users.model");
 
-//login and register by google
-const googleLogin = async (req, res) => {
+//login and register by Facebook
+const facebookLogin = async (req, res) => {
   const checkUser = await User.findOne({ email: req.body.email });
   if (checkUser) {
     res.status(400).send({
@@ -62,5 +62,5 @@ const googleLogin = async (req, res) => {
 };
 
 module.exports = {
-  googleLogin,
+  facebookLogin,
 };

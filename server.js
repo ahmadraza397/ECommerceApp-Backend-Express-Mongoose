@@ -29,6 +29,7 @@ app.use(require("./app/routes/order.routes"));
 app.use(require("./app/routes/reviewsRating.routes"));
 app.use(require("./app/routes/dashboard.routes"));
 app.use(require("./app/routes/loginByGoogle.routes"));
+app.use(require("./app/routes/loginByFacebook.routes"));
 
 mongoose
   .connect(process.env.MONGO_URl, {
