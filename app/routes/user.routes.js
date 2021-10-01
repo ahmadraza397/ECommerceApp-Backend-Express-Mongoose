@@ -15,6 +15,6 @@ router.get("/users/:userId", userMethods.getUserById);
 router.post("/users/login", userMethods.userLogin);
 
 //user Register
-router.post("/users/register");
+router.post("/users/register", userMethods.userRegister);
 
 module.exports = router;
